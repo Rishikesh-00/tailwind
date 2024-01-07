@@ -1,9 +1,17 @@
-import logo from './logo.svg';
+import Header from './Components/Header';
+import Body from './Components/Body';
+import Footer from './Components/Footer';
 import './App.css';
 
 function App() {
   return (
-    <h1 className='text-amber-800'>hello</h1>
+    <>
+      <div className='bg-amber-50 min-h-screen px-6 py-3 flex flex-col gap-16 md:px-10 md:py-7 md:justify-between lg:px-16 lg:py-10'>
+        <Header/>
+        <Body/>
+        <Footer/>
+      </div>
+    </>
   );
 }
 
